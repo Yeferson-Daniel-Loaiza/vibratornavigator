@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Navigator.vibrate()</h1>
+    <button onclick="vibrate()">una vez</button>
+    <p>navigator.vibrate(3000);</p>
+    <button onclick="vibratepattern()">vibrar con un patron</button>
+
+
+    <script>
+        function vibrate(){
+            navigator.vibrate(3000);//la cantidad de tiempo de la vibracion
+        }
+        function vibratepattern() {
+            navigator.vibrate([3000,2000,5000])//vibra 3 segundo 
+                                               //se detiene 2 segundo
+                                               //luego vibra 5 segundos
+        }
+    </script>
+</body>
+</html>
